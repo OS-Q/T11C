@@ -1,6 +1,6 @@
-﻿# srobot
+﻿# [srobot](https://github.com/Qitas/srobot) 
 
-### 简介
+### [简介](https://github.com/Qitas/srobot/wiki)
 
 使用STM32作为驱动芯片，驱动3D打印机作为基础架构
 
@@ -14,13 +14,8 @@
 - startup_stm32f10x_hd.s：256K≤FLASH
 
 
----
-
-## 说明
-
-2018-10-24: 创建工程和文件
 
 ---
-## 为锻造最美之器
+## 锻造最美之器
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
