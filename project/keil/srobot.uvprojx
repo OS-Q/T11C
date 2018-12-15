@@ -80,9 +80,9 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>fromelf.exe --bin -o./srobot.bin ./obj/srobot.axf</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -187,7 +187,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -429,6 +429,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>flash</GroupName>
+          <Files>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\FLASH\flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>24cxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\FLASH\24cxx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>motor</GroupName>
           <Files>
             <File>
@@ -465,21 +480,6 @@
               <FileName>ConfigurationStore.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\MAKER\ConfigurationStore.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>flash</GroupName>
-          <Files>
-            <File>
-              <FileName>flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\USER\FLASH\flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>24cxx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\USER\FLASH\24cxx.c</FilePath>
             </File>
           </Files>
         </Group>

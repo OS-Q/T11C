@@ -220,28 +220,26 @@ void setup(void)
 
  void loop(void)
 {
- while(1)
-{ 
-		if(buflen < (BUFSIZE-1))
-		 { 
-			 get_command();
-		 }
-
-		 if(buflen) 
-		 {
-					process_commands();  
-					if(buflen > 0)
-					{
-						buflen = (buflen-1);
-						bufindr = (bufindr + 1)%BUFSIZE;
-					}
-		 }
-  
-  //check heater every n milliseconds
-  manage_heater();
-  manage_inactivity();
-  checkHitEndstops();
- }
+		while(1)
+		{ 
+				if(buflen < (BUFSIZE-1))
+				 { 
+					 get_command();
+				 }
+				 if(buflen) 
+				 {
+							process_commands();  
+							if(buflen > 0)
+							{
+								buflen = (buflen-1);
+								bufindr = (bufindr + 1)%BUFSIZE;
+							}
+				 }			
+				//check heater every n milliseconds
+				manage_heater();
+				manage_inactivity();
+				checkHitEndstops();
+		}
 }
 
 void get_command(void)
